@@ -1,0 +1,11 @@
+.imagetest {
+  width: 40vw;
+  height: 25vw;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 970px) {
+  .imagetest {
+    height: 50vw;
+  }
+}

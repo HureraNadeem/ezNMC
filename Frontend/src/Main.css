@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+
+.main_container {
+  padding: 200px 150px 140px 150px;
+  display: flex;
+}
+
+.info {
+  width: 50%;
+  color: #353c4e;
+  display: flex;
+  flex-direction: column;
+}
+
+.info h3 {
+  font-size: 65px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.info h3 span {
+  font-weight: bold;
+}
+
+.info p {
+  margin-top: 20px;
+  color: #777;
+  font-family: Dosis, "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  border: 20px solid #00bcd5;
+  border-radius: 50%;
+  justify-content: center;
+  margin-left: 80px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+}
+
+.buttons {
+  margin-top: 60px;
+}
+
+.green {
+  background-color: #00bcd5 !important;
+  color: white !important;
+  font-size: 20px !important;
+  width: 160px !important;
+}
+
+.pink {
+  margin-left: 10px;
+  background-color: #dc3545 !important;
+  color: white !important;
+  font-size: 20px !important;
+  width: 160px !important;
+}
+
+.green:hover,
+.pink:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .pink {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .main_container {
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: column-reverse;
+    padding: 120px 30px;
+  }
+  .info {
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .image {
+    margin: auto;
+    width: 60%;
+    height: 60%;
+  }
+  .info h3 {
+    font-size: 45px;
+  }
+}
+
+.about_heading {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #353c4e;
+  margin-bottom: 30px;
+}
+.about {
+  display: flex;
+  padding: 100px 150px 120px 150px;
+  align-items: center;
+  background-color: #e7efef;
+}
+
+.about_text {
+  color: #777;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin-left: 100px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nmc_image {
+  width: 50%;
+  height: 50vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.nmc_image .carousel {
+  border-radius: 8px;
+  width: 100%;
+}
+
+@media screen and (max-width: 970px) {
+  .about {
+    flex-direction: column-reverse;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .nmc_image {
+    width: 100%;
+    height: 100%;
+  }
+  .about_text {
+    width: 100%;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+  }
+}
+
+.services_heading {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #353c4e;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.services {
+  padding: 50px 150px 150px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service_img {
+  display: flex;
+  align-items: center;
+  padding: 125px 0px;
+}
+
+.service_left,
+.service_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service_left > div > div,
+.service_right > div > div {
+  display: flex;
+}
+
+.service_left > div > div > img,
+.service_right > div > div > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.service_left > div > div > h5,
+.service_right > div > div > h5 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #353c4e;
+  margin-bottom: 10px;
+}
+
+.service_left > div,
+.service_right > div {
+  color: #777;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 970px) {
+  .services {
+    flex-direction: column;
+    padding: 20px 50px 120px 50px;
+  }
+  .service_left {
+    order: 2;
+  }
+  .service_right {
+    order: 3;
+  }
+  .service_img {
+    order: 1;
+    margin: auto;
+  }
+  .service_left > div,
+  .service_right > div {
+    margin-bottom: 30px;
+  }
+
+  .service_img {
+    padding: 0px;
+  }
+  .service_img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.appointment {
+  background-color: #00bcd5;
+  padding: 80px 150px 80px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white !important;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.appointment h4 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.appointment p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.appointment .button {
+  width: 250px;
+  height: 50px;
+}
+
+.appointment .button:hover {
+  font-weight: bold;
+  color: #00bcd5;
+}

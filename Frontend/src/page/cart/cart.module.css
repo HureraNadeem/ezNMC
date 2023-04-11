@@ -1,0 +1,166 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 200px 100px 200px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+}
+.text {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  width: 100px !important;
+}
+
+.title {
+  text-align: center;
+  padding-top: 100px;
+  color: #353c4e !important;
+  font-weight: bold !important;
+}
+
+.product {
+  width: 110px;
+}
+
+.button {
+  background-color: #dc3545 !important;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.button:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.logo {
+  width: 27px;
+  height: 27px;
+}
+
+.table h4 {
+  font-weight: bold;
+  color: #777;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.total h2 span {
+  color: #353c4e;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.checkout {
+  color: white !important;
+  background-color: #dc3545 !important;
+  width: 200px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.checkout:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.quantity p {
+  display: none;
+}
+
+@media screen and (max-width: 970px) {
+  .container {
+    padding: 30px 50px 50px 50px;
+  }
+  .table {
+    display: none;
+  }
+  .card {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 0px;
+  }
+  .product {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text {
+    margin: 10px 0px 10px 0px;
+  }
+  .button {
+    width: 90%;
+  }
+  .img {
+    width: 90%;
+    height: 30vh;
+  }
+  .input {
+    margin-bottom: 10px;
+  }
+  .price {
+    margin: 10px 0px 10px 0px;
+  }
+  .total {
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+  .checkout {
+    width: 100%;
+    padding: 0;
+  }
+  .text h6 {
+    text-align: center;
+  }
+  .quantity {
+    display: flex;
+    align-items: center;
+  }
+  .quantity p {
+    display: block;
+    margin-right: 5px;
+  }
+}

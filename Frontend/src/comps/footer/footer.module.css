@@ -1,0 +1,79 @@
+.container {
+  background-color: #191919;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 150px 40px 150px;
+  letter-spacing: 0.5px;
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  padding: 10px;
+  margin-right: 100px;
+}
+
+.container > div > div {
+  display: flex;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.container > div > div > img {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+.container > div h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 17px;
+}
+
+.container p > span {
+  font-size: 20px;
+}
+
+.container p > span > span {
+  color: #00bcd5;
+  font-weight: bold;
+}
+
+.container a {
+  text-decoration: none;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.container a:hover {
+  text-decoration: none;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+@media screen and (max-width: 970px) {
+  .container {
+    flex-direction: column;
+    padding: 70px 50px 120px 50px;
+  }
+
+  .container > div {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .container > div > div {
+    justify-content: center;
+  }
+}
